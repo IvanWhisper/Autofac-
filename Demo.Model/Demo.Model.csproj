@@ -44,6 +44,7 @@
     <Compile Include="GodUser.cs" />
     <Compile Include="MyWriter.cs" />
     <Compile Include="NomUser.cs" />
+    <Compile Include="OutWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

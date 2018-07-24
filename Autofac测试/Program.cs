@@ -10,10 +10,16 @@ using System.Threading.Tasks;
 
 namespace Autofac测试
 {
+    //参考文章 https://blog.csdn.net/wulex/article/details/78664553
     class Program
     {
         private static IContainer Container { get; set; }
         static void Main(string[] args)
+        {
+            Test01();
+        }
+        #region Autofac 官方文档1-3
+        public static void Test01()
         {
             // 创建你的构建者
             var builder = new ContainerBuilder();
@@ -51,7 +57,6 @@ namespace Autofac测试
             WriteDate();
             Console.ReadLine();
         }
-
         public static void WriteDate()
         {
             //创建作用域，解析IDateWriter，使用它，然后处理作用域。
@@ -62,5 +67,9 @@ namespace Autofac测试
                 writer.WriteData("测试");
             }
         }
+        #endregion
+
+ 
+
     }
 }
